@@ -30,7 +30,7 @@ if (isset($post) || isset($page)) {
 </div>
 <script>
 	function attachDeleteALL () {
-		$("body").one('click','.upload-file-delete',function(){
+	$("body").one('click','.upload-file-delete',function(){
           if(confirm('确认要删除全部文件吗?')){
             var actionUrl = $(".row typecho-page-main typecho-post-area").context.forms.write_post.action
             var idlists = document.getElementById('file-list').getElementsByTagName('li')
@@ -57,8 +57,8 @@ if (isset($post) || isset($page)) {
                             }
                         });
                 }
-                alert('test successed!');
-          		console.log("actionUrl="+actionUrl)
+                //alert('test successed!');
+          	console.log("modify by popcc")
              }
         })
     }
